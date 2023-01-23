@@ -18,59 +18,67 @@
     <div class="site-wrapper">
 
         <header>
-            <p>logo</p>
-
-            <nav class="main-nav">
-                <ul class="nav-links" >
-                    <li><a href="#about">Home</a></li>
+            <div class="site-header">
+                <p>logo</p>
+                
+                <!-- Derived from tutorial: https://www.w3schools.com/howto/howto_js_mobile_navbar.asp -->
+                <a href="javascript:void(0);" class="nav-btn" onclick="navFunc()">
+                <i class="fa fa-bars"></i>
+                </a>
+            </div>
+            
+            <nav id="nav-links" class="nav-links">
+                <ul >
+                    <li><a href="#about">About</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
+
         </header>
         
         <main>
             <section id="about">
                 <h1>Hi, I'm Juls!</h1>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error sunt et aliquam unde eum perspiciatis delectus dolorem? Adipisci, quas harum. Voluptatibus illum, sit ut fugiat molestiae eum omnis eligendi hic quia tenetur doloribus at beatae recusandae iste doloremque, magni exercitationem.</p>
-
-                
             </section>
     
             <section id="projects">
                 <h2>Featured Projects</h2>
+                <div class="proj-wrapper">
                     <article>
-                        <div class="proj-cover">coming soon</div>
+                        <a href="#" class="proj-cover">coming soon</a>
                         <span class="tag">HTML</span>
                         <span class="tag">CSS</span>
                         <h1>Country Website</h1>
                     </article>
                     <article>
-                        <div class="proj-cover">coming soon</div>
+                        <a href="#" class="proj-cover">coming soon</a>
                         <span class="tag">HTML</span>
                         <span class="tag">CSS</span>
                         <h1>Portfolio</h1>
                     </article>
                     <article>
-                        <div class="proj-cover">coming soon</div>
+                        <a href="#" class="proj-cover">coming soon</a>
                         <span class="tag">JavaScript</span>
                         <h1>JavaScript Game</h1>
                     </article>
                     <article>
-                        <div class="proj-cover">coming soon</div>
+                        <a href="#" class="proj-cover">coming soon</a>
                         <span class="tag">JavaScript</span>
                         <h1>Movie Database</h1>
                     </article>
                     <article>
-                        <div class="proj-cover">coming soon</div>
+                        <a href="#" class="proj-cover">coming soon</a>
                         <span class="tag">Wordpress</span>
                         <h1>Recipe Blog</h1>
                     </article>
                     <article>
-                        <div class="proj-cover">coming soon</div>
+                        <a href="#" class="proj-cover">coming soon</a>
                         <span class="tag">E-commerce</span>
                         <h1>Shopify</h1>
                     </article>
+                </div>
             </section>
     
             <section id="contact">
@@ -78,13 +86,13 @@
     
                 <ul class="contact-icons">
                     <li>
-                        <a href="#" class="fa fa-envelope"></a>
+                        <a href="mailto:name@sample.com" class="fa fa-envelope"></a>
                     </li>
                     <li>
-                        <a href="#" class="fa fa-linkedin"></a>
+                        <a href="https://linkedin.com" class="fa fa-linkedin"></a>
                     </li>
                     <li>
-                        <a href="#" class="fa fa-github"></a>
+                        <a href="https://github.com" class="fa fa-github"></a>
                     </li>
                 </ul>
             </section>
@@ -96,6 +104,8 @@
         </footer>
 
     </div>
+    <script src="scripts/script.js"></script>
+
 </body>
 
 </html>
