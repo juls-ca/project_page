@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Juls</title>
+    <title>Jullianne's Landing Page</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@400;700&family=Work+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&family=Work+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles/normalize-fwd-mod.css">
     <link rel="stylesheet" href="styles/styles.css">
@@ -16,15 +16,14 @@
 
 <body>
     <div class="site-wrapper">
-
         <header>
             <div class="site-header">
                 <p>logo</p>
                 
-                <!-- Derived from tutorial: https://www.w3schools.com/howto/howto_js_mobile_navbar.asp -->
-                <a href="javascript:void(0);" class="nav-btn" onclick="navFunc()">
-                <i class="fa fa-bars"></i>
-                </a>
+                <button class="nav-btn" onclick="navFunc()">
+                    <i class="fa fa-bars"></i>
+                </button>
+                
             </div>
             
             <nav id="nav-links" class="nav-links">
@@ -34,55 +33,57 @@
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
-
+            
         </header>
         
         <main>
             <section id="about">
                 <h1>Hi, I'm Juls!</h1>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error sunt et aliquam unde eum perspiciatis delectus dolorem? Adipisci, quas harum. Voluptatibus illum, sit ut fugiat molestiae eum omnis eligendi hic quia tenetur doloribus at beatae recusandae iste doloremque, magni exercitationem.</p>
+                <p>I'm a front-end developer based in Vancouver. I like creating digital experiences for the ever-evolving web landscape. I'm also a proud human of a Maltipoo and an iced coffee enthusiast.</p>
             </section>
     
             <section id="projects">
-                <h2>Featured Projects</h2>
+                <h2>Projects</h2>
                 <div class="proj-wrapper">
                     <article>
                         <a href="#" class="proj-cover">coming soon</a>
                         <span class="tag">HTML</span>
                         <span class="tag">CSS</span>
-                        <h1>Country Website</h1>
+                        <h3>Portfolio</h3>
                     </article>
                     <article>
                         <a href="#" class="proj-cover">coming soon</a>
                         <span class="tag">HTML</span>
                         <span class="tag">CSS</span>
-                        <h1>Portfolio</h1>
+                        <h3>Country Website</h3>
                     </article>
                     <article>
                         <a href="#" class="proj-cover">coming soon</a>
                         <span class="tag">JavaScript</span>
-                        <h1>JavaScript Game</h1>
+                        <h3>JavaScript Game</h3>
                     </article>
                     <article>
                         <a href="#" class="proj-cover">coming soon</a>
                         <span class="tag">JavaScript</span>
-                        <h1>Movie Database</h1>
+                        <h3>Movie Database</h3>
                     </article>
                     <article>
                         <a href="#" class="proj-cover">coming soon</a>
                         <span class="tag">Wordpress</span>
-                        <h1>Recipe Blog</h1>
+                        <h3>Blog</h3>
                     </article>
                     <article>
                         <a href="#" class="proj-cover">coming soon</a>
                         <span class="tag">E-commerce</span>
-                        <h1>Shopify</h1>
+                        <h3>Shopify</h3>
                     </article>
                 </div>
             </section>
     
             <section id="contact">
-                <p>Have a vision?<br>Let's make it happen.</p>
+                <p>Have a vision?<br>
+                Let's make it happen.
+                </p>
     
                 <ul class="contact-icons">
                     <li>
@@ -104,8 +105,8 @@
         </footer>
 
     </div>
-    <script src="scripts/script.js"></script>
 
+<script src="scripts/script.js"></script>
 </body>
 
 </html>
