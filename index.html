@@ -5,21 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jullianne's Landing Page</title>
+    <!-- favicon -->
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="assets/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="assets/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="assets/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="assets/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="assets/apple-touch-icon-152x152.png">
+    <link rel="icon" type="image/png" href="assets/favicon-196x196.png" sizes="196x196">
+    <link rel="icon" type="image/png" href="assets/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="assets/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="assets/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="assets/favicon-128.png" sizes="128x128">
+    <meta name="application-name" content="&nbsp;">
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <meta name="msapplication-TileImage" content="mstile-144x144.png">
+    <meta name="msapplication-square70x70logo" content="mstile-70x70.png">
+    <meta name="msapplication-square150x150logo" content="mstile-150x150.png">
+    <meta name="msapplication-wide310x150logo" content="mstile-310x150.png">
+    <meta name="msapplication-square310x310logo" content="mstile-310x310.png">    
+    <!-- favicon end -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&family=Work+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles/normalize-fwd-mod.css">
     <link rel="stylesheet" href="styles/styles.css">
-   
 </head>
 
 <body>
     <div class="site-wrapper">
         <header>
-            <div class="site-header">
-                <p>logo</p>
-                
+            <div class="site-header"> 
+                <img class="site-logo" src="assets/site-logo.png" alt="Site Logo" width="100" height="100">               
                 <button class="nav-btn" onclick="navFunc()">
                     <i class="fa fa-bars"></i>
                 </button>
@@ -37,12 +57,12 @@
         </header>
         
         <main>
-            <section id="about">
+            <section id="about" class="about">
                 <h1>Hi, I'm Juls!</h1>
-                <p>I'm a front-end developer based in Vancouver. I like creating digital experiences for the ever-evolving web landscape. I'm also a proud human of a Maltipoo and an iced coffee enthusiast.</p>
+                <p>I'm a frontend developer based in Vancouver. I like creating digital experiences for the ever-evolving web landscape. I'm also a proud human of a Maltipoo and an iced coffee enthusiast.</p>
             </section>
     
-            <section id="projects">
+            <section id="projects" class="projects">
                 <h2>Projects</h2>
                 <div class="proj-wrapper">
                     <article>
@@ -80,7 +100,7 @@
                 </div>
             </section>
     
-            <section id="contact">
+            <section id="contact" class="contact">
                 <p>Have a vision?<br>
                 Let's make it happen.
                 </p>
@@ -103,9 +123,7 @@
             For Educational Purposes | FWD 2023 <br>
             Icons from <a href="https://fontawesome.com/">FontAwesome</a>
         </footer>
-
     </div>
-
 <script src="scripts/script.js"></script>
 </body>
 

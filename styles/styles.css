@@ -11,16 +11,16 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Source Code Pro', monospace;
-    color: #4e5cff;
+    color: #0032c8;
 }
 
 /* GENERAL LINKS */
 a, a:visited {
-    color: #4e5cff;
+    color: #0032c8;
 }
 
 a:hover, a:active {
-    color: #ff9500;
+    color: #ff5000;
 }
 
 a:focus {
@@ -41,10 +41,14 @@ a:focus {
     align-items: center;
     margin: 0.5rem 0.5rem 0;
 }
-  
+
+.site-logo {
+    flex: 0 1 auto;
+}
+
 .nav-btn {
     background-color: #fafafa;
-    color: #4e5cff;
+    color: #0032c8;
     border: none;
     font-size: 2rem;    
     display: block; 
@@ -59,18 +63,16 @@ a:focus {
 
 .nav-links ul {
     list-style: none;
+    padding-right: 0.5rem;
     margin: 0;
-    padding: 0 0.5rem;
 }
 
 .nav-links li a {
     font-family: 'Source Code Pro', monospace;
     font-weight: 600;
-    font-size: 1.25rem;
+    font-size: 1.3rem;
     text-decoration: none;
-    margin: 0;
-    padding: 0.25rem 1rem;
-    
+    padding: 0.5rem 1rem;    
 }
 
 @media (min-width: 50em) {
@@ -83,15 +85,18 @@ a:focus {
     .nav-btn {
         display: none;
     }
+
     .nav-links {
         display: block;
         flex: 0 1 auto;
     }
+
     .nav-links ul {
         display: flex;
         justify-content: space-between;
         align-items: center;
         gap: 1rem;
+        padding: 0;
     }
 }
 
@@ -103,15 +108,10 @@ main {
 /* SECTION: ABOUT */
 #about {
     max-width: 40rem;
-    margin: 5rem 0 8rem;
+    margin: 5rem 0 7rem;
 }
-
 
 /* SECTION: PROJECTS */
-#projects h2 {
-    margin: 0;
-}
-
 .proj-wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -120,18 +120,20 @@ main {
 }
 
 .proj-wrapper article {
+    border: 2px solid #0032c8;
+    border-radius: 0.5rem;
+    box-shadow: 5px 5px #282828;
     height: 20rem;
     width: 15rem;
     padding: 0.75rem;
     margin: 1rem;
-    box-shadow: 2px 2px 2px #ebebeb;
-    border-radius: 0.5rem;
 }
 
 .proj-cover {
     background-color: #ebebeb;
     border: 1px solid #ebebeb;
     border-radius: 0.5rem;
+    text-decoration: none;
     margin: 0.5rem 0;
     width: 100%;
     height: 70%;
@@ -140,15 +142,11 @@ main {
     align-items: center;
 }
 
-.proj-cover {
-    text-decoration: none;
-}
-
 .tag {
-    background-color: #4e5cff;
-    border: 1px solid #4e5cff;
+    background-color: #ffe614;
+    border: 1px solid #ffe614;
     border-radius: 1rem;
-    color: #fafafa;
+    color: #282828;
     font-size: 0.9rem;
     padding: 0 0.5rem;
 }
@@ -162,12 +160,14 @@ main {
 #contact {
     text-align: center;
     margin: 5rem auto;
+    font-size: 1.3rem;
 }
 
 .contact-icons {
     margin: 0;
     padding: 0;
 }
+
 .contact-icons li {
     list-style: none;
     display: inline;
@@ -175,7 +175,7 @@ main {
 
 .contact-icons a {
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 2.5rem;
     padding: 1rem;
 }
 
@@ -195,4 +195,14 @@ footer {
     font-size: 0.75rem;
     padding: 2rem 0;
     width: 100%;
+}
+
+footer a {
+    color: #fafafa;
+}
+
+@media (min-width: 50em) {
+    footer {
+        font-size: 1rem;
+    }
 }
