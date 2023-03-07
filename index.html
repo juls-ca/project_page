@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jullianne's Landing Page</title>
+    <title>JULS | Creative Developer</title>
     <!-- favicon -->
     <link rel="apple-touch-icon-precomposed" sizes="57x57" href="assets/apple-touch-icon-57x57.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/apple-touch-icon-114x114.png">
@@ -29,104 +29,65 @@
     <!-- favicon end -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&family=Work+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Space+Mono:ital@0;1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/normalize-fwd-mod.css">
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 
 <body>
     <div class="site-wrapper">
         <header>
-            <div class="site-header"> 
-                <img class="site-logo" src="assets/site-logo.png" alt="Site Logo" width="100" height="100">               
-                <button class="nav-btn" onclick="navFunc()">
-                    <i class="fa fa-bars"></i>
-                </button>
-                
-            </div>
-            
-            <nav id="nav-links" class="nav-links">
-                <ul >
+            <nav>
+                <ul class="site-links">
                     <li><a href="#about">About</a></li>
                     <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#connect">Connect</a></li>
                 </ul>
             </nav>
-            
         </header>
         
         <main>
-            <section id="about" class="about">
-                <h1>Hi, I'm Juls!</h1>
-                <p>I'm a frontend developer based in Vancouver. I like creating digital experiences for the ever-evolving web landscape. I'm also a proud human of a Maltipoo and an iced coffee enthusiast.</p>
+            <section id="hero" class="hero">
+                <h1>Hi, I'm Juls! A <span>creative&nbsp;developer </span> based in Vancouver, specializing in Frontend Development.</h1>
+
             </section>
-    
+            
             <section id="projects" class="projects">
                 <h2>Projects</h2>
-                <div class="proj-wrapper">
-                    <article>
-                        <a href="#" class="proj-cover">coming soon</a>
-                        <span class="tag">HTML</span>
-                        <span class="tag">CSS</span>
-                        <h3>Portfolio</h3>
-                    </article>
-                    <article>
-                        <a href="banff-website/index.html" class="proj-cover">Explore</a>
-                        <span class="tag">HTML</span>
-                        <span class="tag">CSS</span>
-                        <h3>Banff Website</h3>
-                    </article>
-                    <article>
-                        <a href="cyber-jump/index.html" class="proj-cover">Explore</a>
-                        <span class="tag">HTML</span>
-                        <span class="tag">CSS</span>
-                        <span class="tag">JavaScript</span>
-                        <h3>Game - Cyber Jump</h3>
-                    </article>
-                    <article>
-                        <a href="#" class="proj-cover">coming soon</a>
-                        <span class="tag">JavaScript</span>
-                        <h3>Movie Database</h3>
-                    </article>
-                    <article>
-                        <a href="#" class="proj-cover">coming soon</a>
-                        <span class="tag">Wordpress</span>
-                        <h3>Blog</h3>
-                    </article>
-                    <article>
-                        <a href="#" class="proj-cover">coming soon</a>
-                        <span class="tag">E-commerce</span>
-                        <h3>Shopify</h3>
-                    </article>
-                </div>
-            </section>
-    
-            <section id="contact" class="contact">
-                <p>Have a vision?<br>
-                Let's make it happen.
-                </p>
-    
-                <ul class="contact-icons">
-                    <li>
-                        <a href="mailto:name@sample.com" class="fa fa-envelope"></a>
-                    </li>
-                    <li>
-                        <a href="https://linkedin.com" class="fa fa-linkedin"></a>
-                    </li>
-                    <li>
-                        <a href="https://github.com" class="fa fa-github"></a>
-                    </li>
+                <ul class="proj-list">
+                    <li><a href="banff-website/index.html">Banff Travel Guide</a></li>
+                    <li><a href="cyber-jump/index.html">Cyber Jump - JS Game</a></li>
+                    <li><a href="#">Coming Soon ...</a></li>
                 </ul>
+            </section>
+
+            <section id="about" class="about">
+                <h2>About</h2>
+                <p>Continuously learning and experimenting to create inclusive and intuitive digital experiences.</p>
+                <p>When I'm <abbr title="Away From Keyboard">AFK</abbr>, you can find me searching for vintage design books, antiquing for housewares/furnitures, or combing the curls of my beloved Maltipoo.</p>
             </section>
         </main>
         
         <footer>
-            For Educational Purposes | FWD 2023 <br>
-            Icons from <a href="https://fontawesome.com/">FontAwesome</a>
+            <section id="connect" class="connect">
+                <p>Have a vision?<br>
+                Let's make it happen.
+                </p>
+                <ul>
+                    <li>
+                        <a href="mailto:juls.devworks@gmail.com">Email&nbsp;&nearr;</a></li>
+                    <li>
+                        <a href="https://linkedin.com/in/juls-biay" target="_blank">LinkedIn&nbsp;&nearr;</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/juls-ca" target="_blank">GitHub&nbsp;&nearr;</a>
+                    </li>
+                </ul>
+            </section>
+
+            <p>Design and Development by Juls Biay &bull; 2023</p>
         </footer>
     </div>
-<script src="scripts/script.js"></script>
 </body>
 
 </html>

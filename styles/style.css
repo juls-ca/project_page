@@ -1,0 +1,166 @@
+
+/* TYPOGRAPHY */
+body {
+    background-color: #f6f4f2;
+    font-family: 'Space Mono', monospace;
+    color: #222222;
+    font-size: 1rem;
+	font-weight: 300;
+	line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    letter-spacing: -2px;
+    line-height: 1;
+    margin: 0.5rem 0;
+}
+
+
+section h2 {
+    text-transform: uppercase;
+}
+
+/* GENERAL LINKS */
+a, a:visited {
+    color: #f02732;
+    text-decoration: none;
+}
+
+a:hover, a:active {
+    color: #222222;
+}
+
+a:focus {
+    outline: 2px solid #f02732;
+}
+
+/* LAYOUT */
+/* for large screens */
+.site-wrapper {
+	max-width: 120rem; 
+	margin: 0 auto;
+}
+
+
+/*--------------------- HEADER ----------------------*/
+header {
+    max-width: 55rem;
+    padding: 1rem;
+    margin: auto;
+    height: 7vh;
+}
+
+.site-links {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  gap: 0.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.site-links a, .site-links a:visited {
+    color: #f02732;
+    border: 1px solid #f02732;
+    border-radius: 1rem;
+    padding: 0.25rem 1rem;
+}
+
+.site-links a:hover, .site-links a:active, .site-links a:focus {
+    background-color: #f02732;
+    color: #fafafa;
+}
+
+/* ---------------------- MAIN ----------------------*/
+section {
+    padding: 5rem 1rem;
+    max-width: 55rem;
+    margin: 0 auto;
+}
+
+/* SECTION: HERO */
+#hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 83vh;
+}
+
+#hero span {
+    font-style: italic;
+    color: #f02732;
+}
+
+/* SECTION: PROJECT */
+.proj-list {
+    font-style: italic;
+    list-style-type: none;
+    margin: 1rem 0;
+    padding: 0;
+}
+
+.proj-list li {
+    margin: 1.5rem 0;
+}
+
+.proj-list a {
+    border: 1px solid #f02732;
+    border-radius: 2rem;
+    font-size: 5vw;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.proj-list a:hover {
+    background-color: #f02732;
+    color: #fafafa;
+}
+
+@media (min-width: 37.5rem) {
+    .proj-list a {
+        font-size: 2rem
+    }
+}
+
+/* -------------------- FOOTER --------------------*/
+footer {
+    background-color: #222222;
+    color: #fafafa;
+    font-size: 0.75rem;
+    width: 100%;
+    padding: 1rem 0;
+}
+
+footer>p {
+    text-align: center;
+}
+
+.connect {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 55rem;
+}
+
+.connect p {
+    font-family: 'Space Mono', monospace;
+    font-size: 2rem;
+    line-height: 1.8rem;
+}
+
+.connect ul li {
+    list-style-type: none;
+    text-align: right;
+    margin: 0.5rem 0;
+}
+
+.connect a, .connect a:visited {
+    color: #fafafa;
+    text-decoration: underline;
+    padding: 0.25rem 0;
+}
+
+.connect a:hover, .connect a:active, .connect a:focus {
+    color: #f02732;
+}
